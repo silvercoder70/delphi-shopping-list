@@ -1,0 +1,114 @@
+object HeaderFooterForm: THeaderFooterForm
+  Left = 0
+  Top = 0
+  Caption = 'Header Footer Form'
+  ClientHeight = 506
+  ClientWidth = 350
+  FormFactor.Width = 1440
+  FormFactor.Height = 900
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Header: TToolBar
+    Size.Width = 350.000000000000000000
+    Size.Height = 48.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object HeaderLabel: TLabel
+      Align = Contents
+      StyledSettings = [Style, FontColor]
+      Size.Width = 350.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'toollabel'
+      TextSettings.Font.Family = 'Bubblegum Sans'
+      TextSettings.Font.Size = 24.000000000000000000
+      TextSettings.HorzAlign = Center
+      Text = 'Shopping List'
+    end
+  end
+  object Footer: TToolBar
+    Align = Bottom
+    Position.Y = 458.000000000000000000
+    Size.Width = 350.000000000000000000
+    Size.Height = 48.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'bottomtoolbar'
+    TabOrder = 1
+  end
+  object ItemLabel: TLabel
+    Position.X = 24.000000000000000000
+    Position.Y = 64.000000000000000000
+    Text = 'Item'
+    TabOrder = 3
+  end
+  object Item: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 4
+    Position.X = 24.000000000000000000
+    Position.Y = 89.000000000000000000
+    Size.Width = 265.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TextPrompt = 'Enter Item here'
+  end
+  object ShoppingList: TListBox
+    Position.X = 24.000000000000000000
+    Position.Y = 160.000000000000000000
+    Size.Width = 265.000000000000000000
+    Size.Height = 281.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 5
+    DisableFocusEffect = True
+    DefaultItemStyles.ItemStyle = ''
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    Viewport.Width = 261.000000000000000000
+    Viewport.Height = 277.000000000000000000
+  end
+  object ShoppingListLabel: TLabel
+    Position.X = 24.000000000000000000
+    Position.Y = 135.000000000000000000
+    Text = 'Shopping List'
+    TabOrder = 2
+  end
+  object AddItemButton: TSpeedButton
+    Position.X = 297.000000000000000000
+    Position.Y = 89.000000000000000000
+    Size.Width = 40.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'additembutton'
+    Text = 'AddItemButton'
+    OnClick = AddItemButtonClick
+  end
+  object RemoveItemButton: TSpeedButton
+    Position.X = 297.000000000000000000
+    Position.Y = 160.000000000000000000
+    Size.Width = 40.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'deleteitembutton'
+    Text = 'SpeedButton1'
+    OnClick = RemoveItemButtonClick
+  end
+  object ClearListButton: TSpeedButton
+    Position.X = 297.000000000000000000
+    Position.Y = 190.000000000000000000
+    Size.Width = 40.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'trashtoolbutton'
+    Text = 'SpeedButton1'
+    OnClick = ClearListButtonClick
+  end
+  object CopyListButton: TSpeedButton
+    Position.X = 297.000000000000000000
+    Position.Y = 230.000000000000000000
+    Size.Width = 40.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'pagecurltoolbutton'
+    Text = 'CopyListButton'
+    OnClick = CopyListButtonClick
+  end
+end
